@@ -29,7 +29,7 @@ jobs:
         run: dotnet build .\Artemis\src\Artemis.UI\Artemis.UI.csproj
 
       - name: Clone Plugins
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: Plugins
 
@@ -37,7 +37,7 @@ jobs:
         run: dotnet publish -c Release .\Plugins\Artemis.Plugins.zerolass\src\Artemis.Plugins.zerolass.sln
 
       - name: Upload Artemis.Plugins.Modules.zero
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Artemis.Plugins.Modules.zero
           path: .\Plugins\Artemis.Plugins.zerolass\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
