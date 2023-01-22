@@ -3,13 +3,10 @@
     "Name": "zero",
     "Description": "return true if number is incr",
     "Author": "zero",
-    "Website": "",
-    "Repository": "",
+    "Repository": "https://github.com/ALIalshabe/Artemis.Plugins.zerolass",
     "Icon": "QuestionMark",
     "Version": "1.0.0.0",
     "Main": "Artemis.Plugins.Modules.zero.dll",
-    "AutoEnableProperties": true,
-    "RequiresAdmin": false,
-    "Platforms": "Windows,Linux,OSX",
     "Api": "1.0.0"
+    "AutoEnableFeatures": true
 }
