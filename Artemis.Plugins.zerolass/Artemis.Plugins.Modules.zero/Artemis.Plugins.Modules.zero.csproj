@@ -2,14 +2,21 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Platforms>x64</Platforms>
-        <EnableDynamicLoading>true</EnableDynamicLoading>
-        <Nullable>enable</Nullable>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="ArtemisRGB.UI.Shared" IncludeAssets="compile;build;buildTransitive" Version="1.2023.111.4" />
     </ItemGroup>
 
+    <ItemGroup>
+		    <Reference Include="Artemis.Core">
+			        <HintPath>..\..\..\..\Artemis\src\Artemis.Core\bin\net6.0\Artemis.Core.dll</HintPath>
+			        <Private>false</Private>
+		    </Reference>
+	</ItemGroup>
+    
     <ItemGroup>
         <Content Include="plugin.json" CopyToOutputDirectory="PreserveNewest" />
         <PackageReference Include="ArtemisRGB.Plugins.BuildTask" Version="1.1.0" />
