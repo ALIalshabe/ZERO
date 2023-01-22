@@ -18,7 +18,7 @@ jobs:
           path: Plugins
 
       - name: Build Plugins
-        run: dotnet publish -c Release .\Artemis.Plugins.zerolass/src/Artemis.Plugins.zerolass.sln
+        run: dotnet publish -c Release .\Artemis.Plugins.zerolass\src\Artemis.Plugins.zerolass.sln
         
       - name: Upload Artemis.Plugins.Modules.zero
         uses: actions/upload-artifact@v2
