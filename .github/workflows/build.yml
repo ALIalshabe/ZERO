@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artemis.Plugins.Modules.zero
-          path: .\Plugins\src\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
+          path: .\Plugins\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
