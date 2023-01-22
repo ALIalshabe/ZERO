@@ -2,8 +2,8 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Platforms>x64</Platforms>
-		<EnableDynamicLoading>true</EnableDynamicLoading>
-		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+	<EnableDynamicLoading>true</EnableDynamicLoading>
+	<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     </PropertyGroup>
 
     <ItemGroup>
