@@ -12,14 +12,14 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Clone 
+      - name: Clone Plugins
         uses: actions/checkout@v2
 
-      - name: Build 
-        run: dotnet publish -c Release src
+      - name: Build Plugins
+        run: dotnet publish -c Release ./Plugins/src/Artemis.Plugins.zerolass.sln
 
-      - name: Upload 
+      - name: Upload Artemis.Plugins.Modules.zero
         uses: actions/upload-artifact@v3
         with:
           name: Artemis.Plugins.Modules.zero
-          path: src/Artemis.Plugins.Modules.zero/bin/x64/Release/net6.0/publish
+          path: ./Plugins/src/Artemis.Plugins.Modules.zero/bin/x64/Release/net6.0/publish
