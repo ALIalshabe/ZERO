@@ -32,10 +32,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Plugins
-        run: dotnet publish -c Release .\Artemis.Plugins.zerolass\src\Artemis.Plugins.zerolass.sln
+        run: dotnet publish -c Release .\src\Artemis.Plugins.zerolass.sln
 
       - name: Upload zero
         uses: actions/upload-artifact@v3
         with:
           name: zero
-          path: ${{ github.workspace }}\Artemis.Plugins.zerolass\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
+          path: .\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
