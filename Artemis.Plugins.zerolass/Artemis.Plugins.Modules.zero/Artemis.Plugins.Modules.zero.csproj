@@ -9,13 +9,6 @@
     <ItemGroup>
         <PackageReference Include="ArtemisRGB.UI.Shared" IncludeAssets="compile;build;buildTransitive" Version="1.2023.111.4" />
     </ItemGroup>
-
-    <ItemGroup>
-		    <Reference Include="Artemis.Core">
-			        <HintPath>..\..\..\..\Artemis\src\Artemis.Core\bin\net6.0\Artemis.Core.dll</HintPath>
-			        <Private>false</Private>
-		    </Reference>
-	</ItemGroup>
     
     <ItemGroup>
         <Content Include="plugin.json" CopyToOutputDirectory="PreserveNewest" />
