@@ -36,8 +36,8 @@ jobs:
       - name: Build Plugins
         run: dotnet publish -c Release .\Plugins\Artemis.Plugins.zerolass\src\Artemis.Plugins.zerolass.sln
 
-      - name: Upload zero
+      - name: Upload Plugins
         uses: actions/upload-artifact@v3
         with:
-          name: zero
-          path: ./Plugins/Artemis.Plugins.zerolass/Artemis.Plugins.Modules.zero/bin/x64/Release/net6.0/publish
+          name: Plugins
+          path: .\Plugins\Artemis.Plugins.zerolass\Artemis.Plugins.Modules.zero\bin\x64\Release\net6.0\publish
